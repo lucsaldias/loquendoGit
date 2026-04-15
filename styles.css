@@ -1,0 +1,22 @@
+/* Colores por defecto (Claro) */
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s; /* Para que el cambio no sea brusco */
+}
+
+/* Colores cuando se activa el modo oscuro */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #00ff9d; /* Un verde hacker que queda bien con el nombre */
+}
+
+.btn-float {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
