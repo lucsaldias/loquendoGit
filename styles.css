@@ -20,3 +20,82 @@ body.dark-mode {
     background: none;
     border: none;
 }
+
+/*Projects. html*/
+
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 4rem 1rem;
+    text-align: center;
+} 
+
+.filtros {
+    display: flex; justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filtros-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: #e9ecef;
+    color: #333;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filtros-btn:hover {
+    background-color: #ced4da;
+}
+
+.filtros-btn.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.carta-proyecto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 200px;
+    background-color: #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #6c757d;
+}
+
+.info-proyecto {
+    padding: 1.5rem;
+}
+
+.info-proyecto h3 {
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.info-proyecto p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.96rem;
+}
+
+.hidden {
+    display: none;
+} 
