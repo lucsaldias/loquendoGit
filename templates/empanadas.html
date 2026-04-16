@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <meta name="¿Quienes somos?" content="width=device-width, initial-scale=1.0">
     <title>¿Quienes Somos? | LoquendoDev</title>
-    <button onclick="window.history.back()">Volver atras</button>
+    <button onclick="window.history.back()">Volver ⬅</button>
     <style>
+        header {
+    background: #2f577f;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: -30px auto 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+ul { list-style: none; padding: 0;}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid cadetblue;
+    border-radius: 4px;
+    color: #333;
+}
+
+li strong {
+    color: #2f2f2f;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.btn-back {
+    background: cadetblue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+body.dark-mode header {
+    background: #00ff9d;
+}
+
+body.dark-mode header h1 {
+    color: #1a1a1a; 
+}
+
+body.dark-mode .container {
+    background: #222;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #00ff9d;
+}
+
+body.dark-mode li {
+    background: #2a2a2a;
+    color: #00ff9d;
+    border-left-color: #00ff9d;
+}
+
+body.dark-mode li strong {
+    color: #00ff9d;
+    opacity: 0,8;
+}
+
+body.dark-mode .btn-back {
+    background: #00ff9d;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+
         body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0; color:black } 
         header { background: #2f577f; color: black; padding: 1rem; text-align: center; }
         section { padding: 2rem; max-width: 800px; margin: auto; }
@@ -13,14 +94,24 @@
     </style>
 </head>
 <body>
-    
     <header>
         <h1> ¿QUIENES SOMOS? </h1>
+
+        <nav class="barra-lateral">
+            <ul>
+                <button><a href="../index.html">Inicio</a></button>
+                <button><a href="proyectos.html">Nuestros Proyectos</a></button>
+                <button><a href="contacto.html">Contacto</a></button>
+            </ul>
+        </nav>
     </header>
 
     <section>
         <h2>¿Quienes somos?</h2>
-        <p>somos loquendodev</p>
+        <p>LoquendoDev es un grupo dedicado al desarrollo de sitios web como "Carhub"</p>
+        <p>encargados de cumplir los estandares que nuestros clientes esperan</p>
+
+    
 
         <h3>¿Mambo?</h3>
         <ul>
@@ -28,6 +119,27 @@
             <li><strong>zabu zabu:</strong> yura yura</li>
             <li><strong>omatsuri:</strong> mambo</li>
         </ul>
+    </section>
+
+    <section>
+        <h3>Bruno Soto "zacky": Lider de Proyecto | Desarrollador Backend</h3>
+        <ul>
+            <li><strong>Encargado de:</strong> texto texto, mambo</li>
+            <li><strong>Correo contacto:</strong> brun.soto@duocuc.cl</li>
+        </ul>
+
+        <h3>Jorge Salazar "Jota": 1er Desarrollador Frontend</h3>
+        <ul>
+            <li><strong>Encargado de:</strong> desarrollar la perspectiva de los clientes al momento de usar el sitio web.</li>
+            <li><strong>Correo contacto:</strong> jorg.salazarp@duocuc.cl</li>
+        </ul>
+
+        <h3>Lucas Saldias "Spring": 2do Desarrollador Backend | Tester</h3>
+        <ul>
+            <li><strong>Encargado de:</strong> probar el funcionamiento de la pagina, destacando errores y desarrollando el ambiente del sito web.</li>
+            <li><strong>Correo contacto:</strong> luc.saldias@duocuc.cl</li>
+        </ul>
+
     </section>
 
 </body>
